@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: #1f2937;
+  color: white;
+}
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+.hero {
+  background-color: #1f2937;
+  font: 48px extra-bold;
+}
+img {
+  width: 100%;
+}
