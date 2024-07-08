@@ -21,15 +21,17 @@ header {
 }
 .header-items,
 .hero-content,
-.info-container {
+.info-container,
+.quote-container,
+.cta-container {
   width: 75%;
   max-width: 1140px;
   margin: 0 auto;
+  padding: 28px;
 }
 .header-items {
   display: flex;
   justify-content: space-between;
-  padding: 28px;
 }
 ul {
   list-style: none;
@@ -40,9 +42,9 @@ ul {
   font-size: 24px;
   color: #f9faf8;
 }
-.hero {
+.hero,
+footer {
   background-color: #1f2937;
-  padding: 28px;
 }
 .hero-content {
   display: flex;
@@ -75,7 +77,7 @@ img {
   height: auto;
 }
 button {
-  padding: 0.5em 1.5em;
+  padding: 0.5em 2em;
   font-family: inherit;
   font-weight: 500;
   color: #e5e7eb;
@@ -83,5 +85,60 @@ button {
   border: none;
   border-radius: 5px;
 }
-.info-container {
+.cards-container {
+  display: flex;
+  gap: 28px;
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+h2 {
+  text-align: center;
+  font: 36px;
+  font-weight: bold;
+  color: #1f2937;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.card p {
+  color: #1f2937;
+  text-align: center;
+}
+.img {
+  width: 100%;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 20px;
+}
+.block-container {
+  background-color: #e5e7eb;
+}
+blockquote {
+  font: italic lighter 36px roboto;
+  color: #1f2937;
+}
+.quote-container p {
+  font: bold 24px roboto;
+  color: #1f2937;
+  text-align: end;
+}
+.cta-container {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  margin: 28px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+.cta-container > button {
+  border: 2px solid #e5e7eb;
+}
+footer {
+  text-align: center;
+  padding: 1em 0;
 }
